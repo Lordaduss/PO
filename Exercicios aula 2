@@ -21,7 +21,7 @@ public class Exercicio1b{
     }
 }
 
-public class Exercicio 1c{
+public class Exercicio1c{
     public static void main(String[] args){
         int a;
         int b;
@@ -41,16 +41,17 @@ public class Exercicio 1c{
     }
 }
 
-public class Exercicio 1d{
+public class Exercicio1d{
     public static void main(String[] args){
         int i;
-        int a,b,c,d,e,f;
+        int ab,cd,ef;
 
         for (i=1000;i<=9999;i++){
-            a=i/1000;
-            b=(i/100)-a*10;
-            c=(i/10)-a*100;
-            d=i/10;
+            ab=i/100;
+            cd=i%100;
+            ef=ab+cd;
+            if((ef*ef)==i)
+                system.out.println(i);
         }
     }
 }
